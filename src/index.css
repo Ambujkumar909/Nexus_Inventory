@@ -1,0 +1,65 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FDFBF7] text-slate-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .cream-glass {
+    @apply bg-white/70 backdrop-blur-md border border-[#EAE3D5]/50;
+  }
+
+  /* Enterprise Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F9F6F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #EAE3D5;
+    border-radius: 10px;
+    border: 2px solid #F9F6F0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D8CDBA;
+  }
+}
+
+/* Custom Animation Utility Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.4s ease-out forwards;
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
