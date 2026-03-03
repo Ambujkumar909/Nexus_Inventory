@@ -26,6 +26,7 @@ const Layout: React.FC<LayoutProps> = ({
     { id: 'inventory', label: 'Laptop Hub', icon: Icons.Laptop, visible: isAdmin },
     { id: 'requests', label: 'Deployment Queue', icon: Icons.Clipboard, visible: isAdmin },
     { id: 'loans', label: 'Active Loans', icon: Icons.History, visible: isAdmin },
+    { id: 'history', label: 'History Ledger', icon: Icons.History, visible: isAdmin },
     { id: 'scrap', label: 'Scrap Ledger', icon: Icons.Trash, visible: isAdmin },
     { id: 'revisions', label: 'Revision Queue', icon: Icons.History, visible: isRoot },
     { id: 'users', label: 'Identity Access', icon: Icons.Users, visible: isRoot },
