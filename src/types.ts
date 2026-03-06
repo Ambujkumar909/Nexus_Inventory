@@ -25,7 +25,15 @@ export enum LaptopStatus {
   SCRAP = 'SCRAP',
   MAINTENANCE = 'MAINTENANCE',
 }
-
+export enum AssetCategory {
+  LAPTOP = 'Laptop',
+  MOUSE = 'Mouse',
+  KEYBOARD = 'Keyboard',
+  MONITOR = 'Monitor',
+  IMAC = 'iMac',
+  PC = 'PC',
+  MOBILE_PHONE = 'Mobiles'
+}
 export interface User {
   id: string;
   employeeId: string;
@@ -43,9 +51,12 @@ export interface Laptop {
   model: string;
   brand: string;
   specs: string;
+  category: AssetCategory;
   status: LaptopStatus;
   last_assigned_to?: string;
   purchase_date: string;
+  scrapped_by?: string;
+  scrapped_at?: string;
 }
 export enum EditRequestStatus {
   PENDING = 'PENDING',

@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: Icons.Clipboard, visible: true },
-    { id: 'inventory', label: 'Laptop Hub', icon: Icons.Laptop, visible: isAdmin },
+    { id: 'inventory', label: 'Asset Hub', icon: Icons.Laptop, visible: isAdmin },
     { id: 'requests', label: 'Deployment Queue', icon: Icons.Clipboard, visible: isAdmin },
     { id: 'loans', label: 'Active Loans', icon: Icons.History, visible: isAdmin },
     { id: 'history', label: 'History Ledger', icon: Icons.History, visible: isAdmin },
